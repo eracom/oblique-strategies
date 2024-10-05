@@ -36,6 +36,17 @@ h1 {
 	margin-top: 2rem;
 }
 
+#UI p#Num {
+	text-align: center;
+	font-size: 6pt;
+	font-weight: 200;
+	color: #CCC;
+	position: fixed;
+	top: 0;
+	right:0;
+	padding: 1em;
+}
+
 
 
 /* design */

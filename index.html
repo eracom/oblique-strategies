@@ -14,6 +14,7 @@
 
 <div id="UI">
 	<button onClick="window.location.reload();">⌘&thinsp;R</button>
+	<p id="Num">#</p>
 </div>
 
 <script>
@@ -125,8 +126,11 @@ const Strategies = [
 ];
 
 var strategy = document.getElementById('Strategy');
-strategy.innerHTML = Strategies[ Math.floor( Math.random() * Strategies.length )];
+var num = Math.floor( Math.random() * Strategies.length );
+strategy.innerHTML = Strategies[num];
 
+var uiNum = document.getElementById('Num');
+uiNum.innerHTML = num;
 
 }; // window.onload = function()
 
