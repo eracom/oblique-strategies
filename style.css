@@ -1,0 +1,61 @@
+/* typography */
+html {
+	font-family: system-ui;
+}
+h1 {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+
+
+/* layout */
+* { margin:0; box-sizing: border-box; }
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	padding: 2rem;
+}
+
+h1 { 
+	width: 20ch;
+}
+
+.card {
+	padding: 2rem;
+	aspect-ratio: 1.41/1;
+}
+
+#UI {
+	margin-top: 2rem;
+}
+
+
+
+/* design */
+html {
+	background-color: #FEFEFE;
+}
+.card {
+	background-color: #FFF;;
+	box-shadow: 0 0 3rem #00000018;
+}
+
+#UI button {
+	padding: 0.5em 1em;
+	/* border-radius: 0.25em;
+	color: #666;
+	background-color: #EEE;
+	background: linear-gradient(#FFF, #EEE);
+	border: 1px solid #DDD;  */
+	opacity: 0.2;
+}
+#UI button:hover {
+	opacity: 1;
+}
