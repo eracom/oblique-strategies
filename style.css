@@ -45,6 +45,7 @@ html {
 .card {
 	background-color: #FFF;;
 	box-shadow: 0 0 3rem #00000018;
+	position: relative;
 }
 
 #UI button {
@@ -58,4 +59,12 @@ html {
 }
 #UI button:hover {
 	opacity: 1;
+}
+
+small {
+	font-size: 50%;
+	display: block;
+	position: absolute;
+	bottom:2rem;
+	right:2rem;
 }
