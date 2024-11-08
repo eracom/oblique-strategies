@@ -1,6 +1,6 @@
 /* typography */
 html {
-	font-family: system-ui;
+	font-family: "Neue Serie57", system-ui;
 }
 h1 {
 	font-size: 2rem;
@@ -43,7 +43,7 @@ html {
 	background-color: #FEFEFE;
 }
 .card {
-	background-color: #FFF;;
+	background-color: #FFF;
 	box-shadow: 0 0 3rem #00000018;
 	position: relative;
 }
