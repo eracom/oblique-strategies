@@ -12,7 +12,7 @@ h1 {
 
 
 /* layout */
-* { margin:0; box-sizing: border-box; }
+* { margin: 0; box-sizing: border-box; }
 
 body {
 	display: flex;
@@ -23,14 +23,17 @@ body {
 	padding: 2rem;
 }
 
-h1 { 
+.card {
+	padding: 2rem;
+	width: max-content;
+	aspect-ratio: 1.41/1;
+}
+
+h1#Strategy { 
 	width: 20ch;
 }
 
-.card {
-	padding: 2rem;
-	aspect-ratio: 1.41/1;
-}
+
 
 #UI {
 	margin-top: 2rem;
@@ -40,12 +43,13 @@ h1 {
 
 /* design */
 html {
-	background-color: #FEFEFE;
+	background-color: #EEE;
 }
 .card {
-	background-color: #FFF;;
+	background-color: #FFF;
 	box-shadow: 0 0 3rem #00000018;
 	position: relative;
+	border-radius: 0.5rem;
 }
 
 #UI button {
