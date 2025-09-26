@@ -85,8 +85,9 @@ and others will become self-evident.
 			strategy.innerHTML = "Just follow along.";
 		}
 
-		}; //window.onload
+	}; //window.onload
 */
+
 
 window.onload = function(){
 
@@ -226,11 +227,18 @@ const Strategies = [
 
 // "More cowbell!"
 
-var strategy = document.getElementById('Strategy');
-strategy.innerHTML = Strategies[ Math.floor( Math.random() * Strategies.length )];
+var strategy = document.getElementById('Strategy');		// cibler l'élément à remplacer…
 
+	let total = Strategies.length;				// total = 10			// .length = longeur de la liste
+	let rando = Math.random(); 					// rando = 0.54321		// Math.random() = chffre aléatoire 0 à 1
+	let hasar = rando * total;					// hasar = 5.4321		// multiplication: 0 à total
+	let choix = Math.floor( hasar );			// choix = 5			// Math.floor() = arrondi vers le bas
+	strategy.innerHTML = Strategies[ choix ];	// contenu = 5e phrase de la liste…
 
-}; // window.onload = function()
+	// version compacte – mois longue mais, moins comprehénsible (attention les parentheses!):
+	// strategy.innerHTML = Strategies[ Math.floor( Math.random() * Strategies.length )];
+
+}; // fermeture de window.onload = function()
 
 
 </script>
