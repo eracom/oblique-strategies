@@ -40,38 +40,6 @@
 	<button onClick="window.location.reload();">⌘&thinsp;R</button>
 </div>
 
-
-
-<img id="bkgImg">
-
-<style>
-	#bkgImg{
-		position: absolute;
-		top:0;
-		left:0;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-</style>
-
-<script>
-	let mesImages = [
-		"kittens1.jpg",
-		"kittens2.jpg"
-	];
-	let theImage = document.getElementById("bkgImg");
-	let imagesTotal = mesImages.length;
-	let imagesRando = Math.random();
-	let imagesHasar = imagesRando * imagesTotal;
-	let imagesChoix = Math.floor( imagesHasar );
-	theImage.src = mesImages[imagesChoix];
-</script>
-
-
-
-
 <!-- 
 Oblique Strategies
 Over one hundred worthwhile dilemmas
@@ -268,10 +236,10 @@ var strategy = document.getElementById('Strategy');		// cibler l'élément à re
 	strategy.innerHTML = Strategies[ choix ];	// contenu = 5e phrase de la liste…
 
 	// version compacte – mois longue mais, moins comprehénsible (attention les parentheses!):
-	strategy.innerHTML = Strategies[ Math.floor( Math.random() * Strategies.length )];
-
+	// strategy.innerHTML = Strategies[ Math.floor( Math.random() * Strategies.length )];
 
 }; // fermeture de window.onload = function()
+
 
 </script>
 </body>
